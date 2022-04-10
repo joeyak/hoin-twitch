@@ -34,7 +34,6 @@ func main() {
 
 		printer := hoin.NewPrinter(conn)
 		defer func() {
-			printer.LF()
 			printer.Println("Closing client")
 			printer.CutFeed(100)
 		}()
